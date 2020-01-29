@@ -1,0 +1,15 @@
+
+
+Create a react application
+- not npm, but npx
+
+    npx create-react-app comono
+    cd comono
+    npm start
+
+It runs a server and opens the browser in localhost:3000
+
+Explore the src files.
+Delete the all App files
+
+Create the first component.
