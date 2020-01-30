@@ -6,7 +6,12 @@ body {
 }
 
 table {
-    margin: 100px auto;
+    width: 100%;
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto 0;
+    text-align: center;
 }
 
 p  {
@@ -14,7 +19,7 @@ p  {
 }
 
 td {
-    text-align: center;
+    
     background-color: #F6E0FD  ;
     
 }
@@ -22,7 +27,7 @@ th {
     background-color: #E2C7EA;
 }
 td, th {
-    border: 1px solid;
+    border: 1px solid #888888;
     padding:  9px ;
     
   }
@@ -39,5 +44,15 @@ h1 {
     text-align: center;
 }
 button {
-    margin: 0 auto;
+    background-color: #DCFF00;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px #C3C3C3;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 15px; 
+    margin: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
