@@ -1,6 +1,8 @@
 import React from 'react';
 import Tablerow from './Tablerow';
+import Adriana from './Adriana'; 
 import data from '../data/subscribers'
+
 
 class Table extends React.Component {
 
@@ -11,22 +13,35 @@ class Table extends React.Component {
 
     render() {
         return (
-            <table>
-                {
-                    this.state.data.map( el => {
-                        return (
-                            <tbody>
+            <div>
+                <Adriana></Adriana>
+            
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Sport</th>
+                    </thead>
+                    <tbody>
+                    {
+                        this.state.data.map( el => {
+                            return (
                                 <Tablerow
                                     name = {el.name}
                                     lastName = {el.lastName}
                                     age = {el.age}
                                     sport = {el.sport}
                                 ></Tablerow>
-                            </tbody>
-                        )
-                    })
-                }
-            </table>
+                            )
+                        })
+                    }
+                    </tbody>
+                </table>
+                    <button>Clik Me</button>
+                    <button>Clik Me</button>
+                    <button>Clik Me</button>
+            </div>
         )
     }
 }
