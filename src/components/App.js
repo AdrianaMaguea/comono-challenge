@@ -11,18 +11,31 @@ class App extends React.Component {
         this.state = { data };
     }
 
+    sortByName() {
+        console.log('sort by name');
+    }
+
+    sortByAge() {
+        console.log('sort by age');
+    }
+
+    sortBySport() {
+        console.log('sort by sportb');
+    }
+
     render() {
         return (
             <div>
                 <Header name = "Adriana Maguea"></Header>
                 <div className = "container">
-            
                     <table>
                         <thead>
-                            <th>Name</th>
-                            <th>Last Name</th>
-                            <th>Age</th>
-                            <th>Sport</th>
+                            <tr>
+                                <th>Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Sport</th>
+                            </tr>
                         </thead>
                         <tbody>
                         {
@@ -39,9 +52,9 @@ class App extends React.Component {
                         }
                         </tbody>
                     </table>
-                    <button>Sort by name</button>
-                    <button>Sort by age</button>
-                    <button>Sort by sport</button>
+                    <button onClick={this.sortByName}>Sort by name</button>
+                    <button onClick={this.sortByAge}>Sort by age</button>
+                    <button onClick={this.sortBySport}>Sort by sport</button>
                 </div>
             </div>
         )
